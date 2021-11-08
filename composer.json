@@ -1,0 +1,49 @@
+{
+    "name": "neo3k/lara-pdf-merger",
+    "description": "",
+    "keywords": ["merger","merge","pdf","manage","paginate", "laravel", "duplex merge"],
+    "license" : [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Michael Musso",
+            "email": "lynx@deltaaskii.com",
+            "homepage": "https://github.com/Vera"
+        }, {
+            "name": "Ramon Smit",
+            "email": "rsmit@daltcore.com",
+            "homepage": "https://github.com/daltcore"
+        }, {
+            "name": "Marouan Sami",
+            "email": "sami.marwen.isetcom@gmail.com",
+            "homepage": "https://github.com/MarwenSami"
+        }, {
+            "name": "Boris Vera",
+            "email": "boris@wearevera.com",
+            "homepage": "https://github.com/neo3k"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4",
+        "tecnickcom/tcpdf": "^6.4",
+        "setasign/fpdi": "^2.3",
+        "propa/tcpdi": "^1.3"
+    },
+    "homepage" : "https://github.com/neo3k/lara-pdf-merger",
+    "autoload": {
+        "psr-0": {
+            "Vera\\LaraPdfMerger": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vera\\LaraPdfMerger\\PdfMergerServiceProvider"
+            ],
+            "aliases": {
+                "PdfMerger": "Vera\\LaraPdfMerger\\Facades\\PdfMerger"
+            }
+        }
+    }
+}
